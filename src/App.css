@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  mix-blend-mode: normal;
+  box-shadow: 2.34597px 2.34597px 87.9739px rgba(0, 0, 0, 0.2);
+  border-radius: 11.7299px;
+  width: 495px;
+  height: 600px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.inputbox {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 2.34597px 2.34597px 87.9739px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 350px;
+  height: 32px;
+  margin: 16px;
+  border: none;
+  padding: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(6, 6, 6, 0.7);
+}
+
+button {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 2.34597px 2.34597px 87.9739px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: none;
+  width: 366px;
+  height: 40px;
+  margin: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  align-self: center;
+
+  color: rgba(6, 6, 6, 0.7);
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.different{
+  margin: 0 16px 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.heading2{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(6, 6, 6, 0.7);
+}
+.options{
+  margin-left: 16px;
 }
